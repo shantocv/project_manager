@@ -11,3 +11,10 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+
+import '../css/application.scss'
+require('admin-lte');
+import "@fortawesome/fontawesome-free/js/all";
+
+const images = require.context('../images', true)

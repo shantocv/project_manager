@@ -61,3 +61,7 @@ config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 rails generate devise User
 
 
+Add Admin Lte
+--------------------------------
+
+https://dev.to/brayvasq/integrate-andminlte-with-ruby-on-rails-6-od7
