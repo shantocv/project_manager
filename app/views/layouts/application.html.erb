@@ -62,10 +62,18 @@
               <!-- Add icons to the links using the .nav-icon class
                   with font-awesome or any other icon font library -->
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/tasks/new" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
-                    Tasks
+                    Create Tasks
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Kanban Board
                   </p>
                 </a>
               </li>
@@ -77,6 +85,8 @@
       </aside>
 
       <!-- Content Wrapper. Contains page content -->
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <div class="content-wrapper-box">
         <%= yield %>
       </div>
@@ -88,5 +98,8 @@
     </div>
     <!-- ./wrapper -->
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- <script>
+      $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+    </script> -->
   </body>
 </html>

@@ -1,0 +1,36 @@
+<div class="content-wrapper">
+  <p id="notice"><%= notice %></p>
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <p>
+            <strong>Title:</strong>
+            <%= @task.title %>
+          </p>
+
+          <p>
+            <strong>Description:</strong>
+            <%= @task.description %>
+          </p>
+
+          <p>
+            <strong>Status:</strong>
+            <%= @task.status %>
+          </p>
+
+          <p>
+            <strong>Deadline:</strong>
+            <%= @task.deadline %>
+          </p>
+        </div>
+        <%= link_to 'Edit', edit_task_path(@task) %> |
+        <%= link_to 'Back', tasks_path %>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
